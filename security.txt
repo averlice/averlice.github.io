@@ -1,0 +1,12 @@
+# security.txt for Adison Verlice
+
+Contact: mailto:averlicetech@proton.me
+Encryption: https://blindsoft.net/publickey.asc
+Preferred-Languages: en
+Acknowledgements: 
+Expires: 2026-08-15T15:03:13.000Z
+Canonical: https://your-website-domain/.well-known/security.txt
+Policy: 
+
+# Owner Information
+# Name: Adison Verlice
