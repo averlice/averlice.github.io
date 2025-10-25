@@ -3,39 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Blindsoft Enterprises, apart of G4P Studios</title>
-  <meta name="viewport" content="width=350, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    :root{
+      --bg:#f6f7fa;
+      --card:#fff;
+      --muted:#7a8696;
+      --heading:#1a2332;
+      --accent:#2061cc;
+      --accent-hover:#174ea6;
+    }
+    html,body{height:100%;}
     body {
       font-family: Arial, sans-serif;
-      background: #f6f7fa;
+      background: var(--bg);
       color: #222;
       padding: 0;
       margin: 0;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:16px;
+      line-height:1.6;
     }
     header {
-      background: #1a2332;
+      background: var(--heading);
       color: #fff;
       padding: 2rem 1rem 1rem 1rem;
       text-align: center;
     }
     nav {
       background: #263147;
-      padding: 0.5rem;
+      padding: 0.6rem 0.5rem;
       text-align: center;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:0.5rem 1.2rem;
     }
     nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 1.2em;
-      font-weight: 500;
+      padding:0.35rem 0.6rem;
+      border-radius:4px;
+      font-weight:500;
+      display:inline-block;
     }
     nav a:hover, nav a:focus {
-      text-decoration: underline;
+      text-decoration:underline;
+      outline:3px solid rgba(255,255,255,0.06);
     }
     main {
-      max-width: 800px;
+      max-width:900px;
       margin: 2rem auto;
-      background: #fff;
+      background: var(--card);
       box-shadow: 0 2px 6px rgba(0,0,0,0.07);
       border-radius: 7px;
       padding: 2rem;
@@ -43,12 +63,14 @@
     h1 {
       font-size: 2.2em;
       margin-top: 0;
-      color: #1a2332;
+      color: var(--heading);
     }
     h2 {
       margin-top: 2em;
       color: #263147;
+      font-size:1.25em;
     }
+    p{color: #222; margin:0 0 1rem 0}
     .founder {
       margin-bottom: 1.7em;
       padding-bottom: 1em;
@@ -59,12 +81,13 @@
     }
     .founder-links a {
       margin-right: 1em;
-      color: #2061cc;
+      color: var(--accent);
       text-decoration: none;
+      word-break:break-word;
     }
     .founder-links a:hover, .founder-links a:focus {
       text-decoration: underline;
-      color: #174ea6;
+      color: var(--accent-hover);
     }
     .discord-section {
       margin-top: 2.5em;
@@ -75,17 +98,24 @@
       border-radius: 7px;
       border: none;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      width:100%;
+      max-width:350px; /* preserve original intended width but allow scaling */
+      height:500px;
     }
     .note {
       background: #e3f2fd;
-      color: #174ea6;
+      color: var(--accent-hover);
       padding: 0.8em 1em;
       margin: 1em 0;
       border-radius: 5px;
-      font-size: 1.07em;
+      font-size: 1.03em;
+    }
+    a{word-break:break-word}
+    @media (max-width: 900px) {
+      main { padding: 1.2rem; margin:1rem; }
     }
     @media (max-width: 600px) {
-      main { padding: 1rem; }
+      body{font-size:15px}
       iframe { width: 100% !important; height: 350px !important; }
     }
   </style>
@@ -134,7 +164,7 @@
     </section>
     <section class="discord-section">
       <h2>Join the Blindsoft Discord Server</h2>
-      <iframe src="https://discord.com/widget?id=1373065266228891760&theme=dark" width="350" height="500" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe src="https://discord.com/widget?id=1373065266228891760&theme=dark" width="350" height="500" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Discord widget"></iframe>
       <div class="note">
         <strong>Note:</strong> Make sure to read the <a href="https://blindsoft.net/rules.html" target="_blank" rel="noopener">server rules</a>.
       </div>
