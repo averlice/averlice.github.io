@@ -1,0 +1,33 @@
+<title>blindsoft image describer privacy policy</title>
+<p>please read our privacy policy carefully. seriously, we're not like those other companies.</p>
+<h1>important note</h1>
+if you are self-hosting and/or hosting on your own cloudflare worker, you can ignore this privacy policy. this privacy policy only applies to the <strong>public</strong> version of the bot hosted by blindsoft.
+
+note: you should never trust any privacy policy that is not honest. if in doubt, host yourself.
+<h1>your use of the bots including (but not limited to) BSID-JS</h1>
+blindsoft and its partners are able to see and log any and all API queries the bot makes. this means that as a user of the bot, you agree to the possible collection of data of any and all gemini API metadata, and, as such, the images you send to the gemini API.
+this includes (but is not limited to) gemini API data such as the images you send, descriptions, and discord user metadata of who sent the message.
+you also shall agree to the collection of any test and OCR data that you may provide to the bot when using /test or /ocr .
+<h1>what we collect</h1>
+<ul>
+<li><strong>server information:</strong> information about your discord server you add the bot to, including how many members, server ID, and server name.</li>
+<li><strong>gemini API queries:</strong> information such as the images you send, and how many times you have queried the gemini API.</li>
+<li><strong>user installs:</strong> by installing the bot onto your discord account, you agree that blindsoft, at any given time, can see that you installed the bot and grab information such as your user ID, your username, and command usage of the bot. note: the bot cannot see your messages across discord because it doesn't wake up until you call the bot with a slash command.</li>
+</ul>
+<h1>what we do not collect</h1>
+<ul>
+<li><strong>messages across discord:</strong> the bot does not, and, thanks to cloudflare workers stateless setup, cannot, collect messages across discord servers you're in. the bot only collects a message if you call it with the describe button in the context menu of your user-installed application.</li>
+<li><strong>IP addresses:</strong> the bot does not and cannot collect information of the users internet such as Internet Protocol (IP) addresses.</li>
+<li><strong>private discord account information:</strong> the bot cannot collect your private information, E.G. password, discord account token, 2-factor authentication security codes, phone number, or any other private account information you may have.</li>
+</ul>
+<h1>security</h1>
+note: this could change at anytime. for the best security, it is best to host your own bot using either <a href="https://blindsoft.net/blog/bsidpy.html">BSID-PY</a> or <a href="https://blindsoft.net/blog/bsid.html">BSID-JS</a>.
+<ul>
+<li><strong>stored in secrets format:</strong> the bot's wrangler.toml configuration uses cloudflare encryption at rest in order to protect sensitive bot data such as API keys, discord bot token, among other types of sensitive information.</li>
+<li><strong>HTTPS & Signatures:</strong> the worker goes through https webhooks, and thanks to discord requiring a public key for the bot to sign messages, messages from the worker cannot be spoofed. furthermore, rather than a traditional worker setup with a workers.dev URL, it utilizes a custom domain.</li>
+<li><strong>google account security:</strong> the account hosting the gemini API key for the bot has advanced protection program turned on meaning adison verlice cannot get his account hacked without his passkey. furthermore, as stated earlier, the API key is stored in secrets format, meaning it is encrypted at rest.</li>
+</ul>
+<h1>opt out of data collection</h1>
+to opt out of data collection, or if you do not agree to this privacy policy, you must stop all uses of the public bot. you can either terminate the bot out of your servers and forget BSID altogether, or you can use the <a href="https://github.com/averlice/bsid-js">cloudflare workers template</a> to host your own version.
+<h1>questions, comments, or concerns?</h1>
+<a href="mailto:averlicetech@proton.me">email adison verlice</a> or contact him on discord at notasusybaka. alternatively you can also go to the support channel in the blindsoft enterprises server.
