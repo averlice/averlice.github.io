@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>BLNDSOFT-RWT-2026-004</identifier>
+  <sender>systems@blindsoft.net</sender>
+  <sent>2026-07-11T19:55:00-06:00</sent>
+  <status>Test</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <category>Safety</category>
+    <event>Required Weekly Test</event>
+    <urgency>Past</urgency>
+    <severity>Minor</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>SAME</valueName>
+      <value>RWT</value>
+    </eventCode>
+    <headline>Required Weekly Test</headline>
+    <description>this is a test of the blindsoft emergency alert system. This system is performed in order for blindsoft enterprises to participate in the emergency alert system. this is only a test and no action is required. if this had been an actual emergency or threat, you would now hear instructions to keep you and your family safe. we now resume normal programming</description>
+    
+    <area>
+      <areaDesc>Fremont County, CO</areaDesc>
+      <geocode>
+        <valueName>SAME</valueName>
+        <value>008043</value> 
+      </geocode>
+    </area>
+  </info>
+</alert>
