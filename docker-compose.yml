@@ -1,0 +1,17 @@
+services:
+  webcom:
+    image: averlice/webcom:latest
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:2032:2032"
+    volumes:
+      - ./data:/data
+    cap_drop:
+      - ALL
+    read_only: false
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - WEBCOM_DATA_DIR=/data
+      - WEBCOM_PORT=2032
+      - WEBCOM_BIND=0.0.0.0
